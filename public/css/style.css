@@ -483,6 +483,7 @@ nav a:active , .plus a:active , nav i:active {
 
 .modal-box .container {
     background-color: var(--wh);
+    width: 30rem;
     padding: 2rem;
     animation: show 1s cubic-bezier( 0.68, -0.55, 0.265, 1.55 ) forwards;
     border-radius: 0.5rem;
@@ -537,7 +538,7 @@ nav a:active , .plus a:active , nav i:active {
 .modal-box .container form textarea {
     height: 5rem;
     background: transparent;
-    width: 30rem;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.3rem;
     border: 0.140rem solid  var(--cof);
@@ -772,5 +773,22 @@ footer {
         top: 0.5rem;
         right: 0.5rem;
         display: block;
+    }
+}
+
+@media (max-width:600px) {
+    .home .slot-2 img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .home , .about , .contact  , .menu , .product {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .modal-box .container {
+        width: 100%;
+        border-radius: 0;
     }
 }
