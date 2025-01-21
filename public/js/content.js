@@ -231,7 +231,7 @@ coffe.forEach(item => {
     let card = `
     <div data-aos="zoom-in" data-aos-duration="600" class="card">
         <div class="img">
-            <img src="assets/produk/${item.photo}">
+            <img src="./assets/produk/${item.photo}">
         </div>
         <div class="text">
             <h1>${item.name}</h1>
